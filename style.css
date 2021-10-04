@@ -82,6 +82,7 @@
 .carosal-area {
     background-image: url("img/carosal-bg.jpg");
     background-size: cover;
+    width: 100%;
 }
 
 .carosal-area .text {

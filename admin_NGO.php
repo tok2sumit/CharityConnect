@@ -229,7 +229,7 @@ border-radius: 8px;
       <div class="header__main">
         <ul class="header__links">
           <li class="header__link-wrapper">
-            <a href="/" style="margin-top: 12px;" class="btn btn-info ">Home</a>
+            <a href="admin_dashboard.php" style="margin-top: 12px;" class="btn btn-info ">Home</a>
           </li>
           
 
@@ -246,11 +246,11 @@ border-radius: 8px;
       <div class="header__sm-menu-content">
         <ul class="header__sm-menu-links">
           <li class="header__sm-menu-link">
-            <a href="/"  class="btn btn-info">Home</a>
+            <a href="admin_dashboard.php"  class="btn btn-info">Home</a>
           </li>
           
           <li class="header__sm-menu-link">
-            <a href="Reg_Login.html" class="btn btn-info">Logout</a>
+            <a href="home.html" class="btn btn-info">Logout</a>
           </li>
         </ul>
       </div>
@@ -353,8 +353,8 @@ $total2 = $row2[0];
                   <div class="footer-text two">
                       <h3>USEFUL LINKS</h3>
                       <ul>
-                          <li><a href="/">Home</a></li>
-                          <li><a href="Reg_Login.html">Logout</a></li>
+                          <li><a href="admin_dashboard.php">Home</a></li>
+                          <li><a href="home.html">Logout</a></li>
                           
                       </ul>
                   </div>

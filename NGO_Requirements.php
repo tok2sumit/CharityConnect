@@ -336,7 +336,7 @@ else{
           <div class="header__main">
             <ul class="header__links">
               <li class="header__link-wrapper">
-                <a href="/" style="margin-top: 12px;" class="btn btn-info ">Home</a>
+                <a href="NGO_dashboard.html" style="margin-top: 12px;" class="btn btn-info ">Home</a>
               </li>
               
               <li class="header__link-wrapper">
@@ -352,7 +352,7 @@ else{
           <div class="header__sm-menu-content">
             <ul class="header__sm-menu-links">
               <li class="header__sm-menu-link">
-                <a href="/"  class="btn btn-info">Home</a>
+                <a href="NGO_dashboard.html"  class="btn btn-info">Home</a>
               </li>
               
               <li class="header__sm-menu-link">

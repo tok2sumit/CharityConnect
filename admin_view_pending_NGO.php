@@ -229,7 +229,7 @@ border-radius: 8px;
       <div class="header__main">
         <ul class="header__links">
           <li class="header__link-wrapper">
-            <a href="/" style="margin-top: 12px;" class="btn btn-info ">Home</a>
+            <a href="admin_dashboard.php" style="margin-top: 12px;" class="btn btn-info ">Home</a>
           </li>
           
 
@@ -246,7 +246,7 @@ border-radius: 8px;
       <div class="header__sm-menu-content">
         <ul class="header__sm-menu-links">
           <li class="header__sm-menu-link">
-            <a href="/"  class="btn btn-info">Home</a>
+            <a href="admin_dashboard.php"  class="btn btn-info">Home</a>
           </li>
           
           <li class="header__sm-menu-link">
@@ -267,7 +267,7 @@ border-radius: 8px;
         <h1>ADMIN APPROVEL</h1>
       </div>
      
-    <a href="/admin-NGO" class="btn btn-primary" style="margin-left: 12px; margin-top: 12px;"><span>Back</span></a>
+    <a href="admin_dashboard.php" class="btn btn-primary" style="margin-left: 12px; margin-top: 12px;"><span>Back</span></a>
    
  
        <?php
@@ -391,7 +391,7 @@ if(isset($_POST['deny'])){
                   <div class="footer-text two">
                       <h3>USEFUL LINKS</h3>
                       <ul>
-                          <li><a href="/">Home</a></li>
+                          <li><a href="admin_dashboard.php">Home</a></li>
                           <li><a href="Reg_Login.html">Logout</a></li>
                           
                       </ul>

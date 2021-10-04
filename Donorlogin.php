@@ -72,10 +72,7 @@ session_start();
     transition: 0.5s;
 }
 
-@media only screen and (max-width: 37.5em) {
-     
-    
-    }
+
 .input1:focus{
 width: 50%;
 border-color: rgb(191, 223, 132);  
@@ -189,7 +186,7 @@ if (!$conn) {
             </div>
         </div>
         <input class="input1" type="submit" name="submit" value="Login">    
-        <button class="input1" onclick="window.location.href='Donorsignup.html'" type="submit" name="">Cancel</button>  
+        <button class="input1" onclick="window.location.href='Donorsignup.php'" type="submit" name="">Cancel</button>  
     </form>
     
 </div>
@@ -244,5 +241,19 @@ if (!$conn) {
     </div>
   </footer>
   
+
+  
+<script>
+const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
+const smallMenu = document.querySelector('.header__sm-menu')
+
+hamMenuBtn.addEventListener('click', () => {
+if (smallMenu.classList.contains('header__sm-menu--active')) {
+  smallMenu.classList.remove('header__sm-menu--active')
+} else {
+  smallMenu.classList.add('header__sm-menu--active')
+}
+})
+</script> 
 </body>
 </html>
