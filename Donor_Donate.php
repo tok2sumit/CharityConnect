@@ -355,13 +355,18 @@ if ($conn) {
     if($eamount==""){
       echo "<script>alert('please fill amount...!!');</script>";
   }else{   
+
+
+    $del = "DELETE FROM requirements where amount < 0";
+    $result = mysqli_query($conn, $del);
+
 $update= "update requirements set amount = (amount - '$eamount') where name like '$ename' ";
 
 
+
 if(mysqli_query($conn,$update)){
-    echo "<script>alert('requirements filled...!!');</script>";
-    // Redirect browser
-    // header("Location: Donor_AllRequirements.php");
+
+    echo "<script>alert('Amount donated Successfully ...!!');</script>";
 }
 else{
     echo "Error: " . $update . "<br>" . mysqli_error($conn);
@@ -373,6 +378,7 @@ else{
  
 
 
+// here we are maintaining the donor history of transaction.
 // Check connection
 if ($conn) { 
     mysqli_select_db($conn,"donor");
@@ -387,12 +393,14 @@ if ($conn) {
     if($eamount==""){
       echo "<script>alert('please fill amount...!!');</script>";
   }else{   
-$update= "update requirements set amount = (amount - '$eamount') where name like '$ename' ";
+
 $insert = "insert into his values('$username','$ename','$eamount')";
 
 if(mysqli_query($conn,$insert)){
-    // Redirect browser
-    // header("Location: Donorlogin.php");
+    echo '<script type = "text/javascript">';
+    
+    echo 'window.location.href = "Donor_AllRequirements.php"';
+    echo '</script>';
 }
 else{
     echo "Error: " . $insert . "<br>" . mysqli_error($conn);

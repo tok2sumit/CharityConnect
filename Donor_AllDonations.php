@@ -121,7 +121,7 @@ border-radius: 8px;
           <div class="header__main">
             <ul class="header__links">
               <li class="header__link-wrapper">
-                <a href="Donor_dashboard.html" style="margin-top: 12px;" class="btn btn-info ">Home</a>
+                <a href="Donor_dashboard.php" style="margin-top: 12px;" class="btn btn-info ">Home</a>
               </li>
               <li class="header__link-wrapper">
                 <a href="Donor_feedback.php" class="btn btn-info" style="margin-top: 12px;" >feedback</a> 

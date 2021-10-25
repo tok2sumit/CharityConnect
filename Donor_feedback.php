@@ -192,8 +192,10 @@ $insert= "insert into feedback values('$mail','$feed')";
 
 if(mysqli_query($conn,$insert)){
   echo "<script>alert('feedback uploaded....!!');</script>";
-    // Redirect browser
-    // header("Location: Donorlogin.php");
+  echo '<script type = "text/javascript">';
+    
+  echo 'window.location.href = "Donor_dashboard.php"';
+  echo '</script>';
 }
 else{
     echo "Error: " . $insert . "<br>" . mysqli_error($conn);
