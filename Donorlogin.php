@@ -16,7 +16,7 @@ session_start();
 
 .contain{
     width: 100%;
-    height: 40vh;
+    height: 45vh;
     position: relative;
     margin-bottom: 2px;
 }

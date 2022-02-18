@@ -119,9 +119,10 @@ background-color: yellowgreen;
 <body>
 
 <?php
-include 'check.php';
+    include 'check.php';
 
     if (isset($_POST["submit"])) {
+
     $fnm=$_POST["firstname"];
     $lnm=$_POST["lastname"];
     $mail=$_POST["email"];
@@ -206,7 +207,7 @@ else{
             <input type="number" name="confermpassword" id="confermpassword" class="input1" placeholder="Conferm-password" required>
             <input type="number" name="mobileno" id="mobileno" class="input1" placeholder="Mobile no" required>
             <input type="text" name="address" id="address" class="input1" placeholder="Address" required>
-            <input type="submit" name="submit" class="input1">Register>
+            <input type="submit" name="submit" class="input1">
             <label style="color: white;"> Already Registered....!!</label>
             <button onclick="window.location.href='Donorlogin.php'" class="Cancel">Login</button>
         
