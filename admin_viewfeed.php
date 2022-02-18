@@ -338,18 +338,8 @@ background-color: yellowgreen;
 <a href="admin_dashboard.php" class="btn btn-primary" style="margin-bottom: 12px; margin-top: 22px;"><span>Back</span></a>
 
 <?php
-     $servername = "localhost";
-     $username = "root";
-     $password = "";
-     
-     // Create connection
-     $conn = mysqli_connect($servername, $username, $password);
-     
-     // Check connection
-     if (!$conn) {
-       die("Connection failed: " . mysqli_connect_error());
-     } 
-     mysqli_select_db($conn,"donor");
+          include 'check.php';
+        
           $query = "SELECT * FROM feedback";
           $result = mysqli_query($conn, $query);
           while($row = mysqli_fetch_array($result)){

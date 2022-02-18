@@ -104,24 +104,13 @@ background-color: yellowgreen;
 
 <?php
 
+include 'check.php';
 
 if(isset($_POST["submit"])){
 
 	$user=strval($_POST["User"]);
 	$pass=strval($_POST["pass"]);
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password);
-
-// Check connection
-if (!$conn) {
-	die("Connection failed: " . mysqli_connect_error());
-} 
-    mysqli_select_db($conn,"admin");
+    
 	$query= "select * from admins where username = '$user' and password='$pass'";
 	$data=mysqli_query($conn,$query) or die(mysqli_error($conn));
 	$count = mysqli_num_rows($data);

@@ -334,19 +334,8 @@ background-color: yellowgreen;
          
                 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+    include 'check.php';
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password);
-
-// Check connection
-if ($conn) { 
-    mysqli_select_db($conn,"NGO");
-}else{
-    die("Connection failed: " . mysqli_connect_error());
-}
     if (isset($_POST["submit"])) {
 
     $ename=$_POST["ename"];
@@ -380,11 +369,7 @@ else{
 
 // here we are maintaining the donor history of transaction.
 // Check connection
-if ($conn) { 
-    mysqli_select_db($conn,"donor");
-}else{
-    die("Connection failed: " . mysqli_connect_error());
-}
+
     if (isset($_POST["submit"])) {
     $username = $_POST["username"];
     $ename=$_POST["ename"];
@@ -398,7 +383,6 @@ $insert = "insert into his values('$username','$ename','$eamount')";
 
 if(mysqli_query($conn,$insert)){
     echo '<script type = "text/javascript">';
-    
     echo 'window.location.href = "Donor_AllRequirements.php"';
     echo '</script>';
 }

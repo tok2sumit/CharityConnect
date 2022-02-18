@@ -166,18 +166,9 @@ border-radius: 8px;
       </div>
      
       <?php
-       $servername = "localhost";
-       $username = "root";
-       $password = "";
-       
-       // Create connection
-       $conn = mysqli_connect($servername, $username, $password);
-       
-       // Check connection
-       if (!$conn) {
-         die("Connection failed: " . mysqli_connect_error());
-       } 
-       mysqli_select_db($conn,"donor");
+
+       include 'check.php';
+      
        $id = $_SESSION["user"];      
             $query = "SELECT * FROM his where username = '$id' ORDER BY amount ASC";
             $result = mysqli_query($conn, $query);

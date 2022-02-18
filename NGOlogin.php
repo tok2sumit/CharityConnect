@@ -103,33 +103,26 @@ background-color: yellowgreen;
 
 <!-- php for NGO validation -->
 <?php
-
-$db = mysqli_connect("localhost","root","","NGO");
-
-if(!$db)
-{
-    die("Connection failed: " . mysqli_connect_error());
-}
+include 'check.php';
 
 if(isset($_POST['login'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
         $name = $_POST["name"];
 
-        $forname = mysqli_query($db,"SELECT * FROM NGOs where filename = '$name'");
+        $forname = mysqli_query($conn,"SELECT * FROM NGOs where filename = '$name'");
         $count = mysqli_num_rows($forname);
 	if ($count<=0){
 		echo "<script>alert('Wrong Credentials....!!');</script>";
 		
 	}else {
             
-        
-        $select = mysqli_query($db, "SELECT * FROM NGOs WHERE username = '$username' AND password = '$password'");
+        $select = mysqli_query($conn, "SELECT * FROM NGOs WHERE username = '$username' AND password = '$password'");
         $row = mysqli_fetch_array($select);
 
         $status =$row['status'];
 
-        $select2 = mysqli_query($db, "SELECT * FROM NGOs WHERE username = '$username' AND password = '$password'");
+        $select2 = mysqli_query($conn, "SELECT * FROM NGOs WHERE username = '$username' AND password = '$password'");
         $check_user=mysqli_num_rows($select2);
 
         if($check_user==1){
@@ -216,14 +209,14 @@ if(isset($_POST['login'])){
         </div>
 
         <input class="input1" type="submit" name="login" value="Login">   
-        <button class="input1" onclick="window.location.href='NGOsignup.html'" type="submit" name="">Cancel</button>   
+        <button class="input1" onclick="window.location.href='NGOsignup.php'" type="submit" name="">Cancel</button>   
     </form>
     
 </div>
 
 <div class="contain">
     <video autoplay loop muted>
-        <source src="/Video/video.mp4" type="video/mp4">
+        <source src="Video/video.mp4" type="video/mp4">
     </video>
     <div class="text-box">
             Charity Connect

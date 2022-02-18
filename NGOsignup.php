@@ -118,14 +118,7 @@ background-color: yellowgreen;
 <body>
 
 <?php
-
-$db = mysqli_connect("localhost","root","","NGO");
-
-if(!$db)
-{
-    die("Connection failed: " . mysqli_connect_error());
-}
-
+include 'check.php';
 if(isset($_POST["submit"]))
 {
     $var1 = rand(1111,9999);  // generate random number in $var1 variable
@@ -150,7 +143,7 @@ if(isset($_POST["submit"]))
     move_uploaded_file($_FILES["image"]["tmp_name"],$dst);  // move image into the {all_images} folder with 32 characters hex number and image name
 	
     $select = "SELECT * FROM NGOs WHERE email = '$mail'";
-    $result = mysqli_query($db, $select);
+    $result = mysqli_query($conn, $select);
     if(mysqli_num_rows($result) > 0){
       echo '<script type  = "text/javascript">';
       echo 'alert("Email Already Taken!");';
@@ -158,7 +151,7 @@ if(isset($_POST["submit"]))
       echo '</script>';
     }else{
       $register = "INSERT INTO NGOs (filename,images,firstname,lastname,email,username,password,confermpassword,mobileno,address, status) VALUES ('$_POST[fname]','$dst_db','$fnm','$lnm','$mail','$unm','$pass','$repass','$phone','$addr', 'pending')";
-      mysqli_query($db, $register);
+      mysqli_query($conn, $register);
       echo '<script type  = "text/javascript">';
       echo 'alert("Your account is now pending for approval!");';
       echo 'window.location.href = "NGOlogin.php"';
@@ -166,18 +159,6 @@ if(isset($_POST["submit"]))
   }
 }
 
-//     $check = mysqli_query($db,"insert into ngos(filename,images,firstname,lastname,email,username,password,confermpassword,mobileno,address) values('$_POST[fname]','$dst_db','$fnm','$lnm','$mail','$unm','$pass','$repass','$phone','$addr')");  // executing insert query
-		
-//     if($check)
-//     {
-//     	echo '<script type="text/javascript"> alert("Registered Seccessfully!"); </script>';  // alert message
-//       header("Location: NGOlogin.php");
-//     }
-//     else
-//     {
-//     	echo '<script type="text/javascript"> alert("Error Uploading Data!"); </script>';  // when error occur
-//     }
-// }
 ?>
 
 <header class="header">

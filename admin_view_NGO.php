@@ -269,18 +269,20 @@ border-radius: 8px;
   <a href="admin_NGO.php" class="btn btn-primary" style="margin-bottom: 12px; margin-top: 22px;"><span>Back</span></a>
 
   <?php
-       $servername = "localhost";
-       $username = "root";
-       $password = "";
+
+  include 'check.php';
+      //  $servername = "localhost";
+      //  $username = "root";
+      //  $password = "";
        
-       // Create connection
-       $conn = mysqli_connect($servername, $username, $password);
+      //  // Create connection
+      //  $conn = mysqli_connect($servername, $username, $password);
        
-       // Check connection
-       if (!$conn) {
-         die("Connection failed: " . mysqli_connect_error());
-       } 
-       mysqli_select_db($conn,"NGO");
+      //  // Check connection
+      //  if (!$conn) {
+      //    die("Connection failed: " . mysqli_connect_error());
+      //  } 
+      //  mysqli_select_db($conn,"NGO");
             $query = "SELECT * FROM NGOs ORDER BY id ASC";
             $result = mysqli_query($conn, $query);
             while($row = mysqli_fetch_array($result)){

@@ -269,19 +269,8 @@ border-radius: 8px;
 
 <?php
 
+include 'check.php';
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password);
-
-// Check connection
-if (!$conn) {
-die("Connection failed: " . mysqli_connect_error());
-} 
-mysqli_select_db($conn,"NGO");
 $sql = "SELECT COUNT(1) FROM NGOs";
 $cnt = mysqli_query($conn,$sql);
 $row = mysqli_fetch_array($cnt);

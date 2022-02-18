@@ -175,18 +175,8 @@ border-radius: 8px;
            
       
        <?php
-       $servername = "localhost";
-       $username = "root";
-       $password = "";
-       
-       // Create connection
-       $conn = mysqli_connect($servername, $username, $password);
-       
-       // Check connection
-       if (!$conn) {
-         die("Connection failed: " . mysqli_connect_error());
-       } 
-       mysqli_select_db($conn,"NGO");
+
+            include 'check.php';
             $query = "SELECT * FROM requirements ORDER BY amount ASC";
             $result = mysqli_query($conn, $query);
             while($row = mysqli_fetch_array($result)){
@@ -229,28 +219,6 @@ border-radius: 8px;
             }
             ?>
        
-   
-<!-- <div class="container">
-        <div class="row my-5">
-           
-    <div class="col">
-
-        <div class="card" >
-            <div class="card-body">
-                <h5 class="card-title" style="font-size: 26px;"></h5>
-                <p class="card-text" style="font-size: 26px;"><br><br><hr>
-                    <p style="font-size: 24px;"></p></p>
-               <a href="donate?nid={{req.nid}}&id={{req.id}}" class="btn btn-outline-primary">Donate</a>
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-</div> -->
-
-
-
 <div class="contain">
   <video autoplay loop muted>
       <source src="Video/video.mp4" type="video/mp4">

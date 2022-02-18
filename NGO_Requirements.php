@@ -278,19 +278,8 @@ background-color: yellowgreen;
 <body>
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+    include 'check.php';
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password);
-
-// Check connection
-if ($conn) { 
-    mysqli_select_db($conn,"NGO");
-}else{
-    die("Connection failed: " . mysqli_connect_error());
-}
     if (isset($_POST["submit"])) {
     $ename=$_POST["ename"];
     $edesc=$_POST["edesc"];
