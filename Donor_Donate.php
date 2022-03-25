@@ -294,7 +294,7 @@ background-color: yellowgreen;
                 <a href="Donor_feedback.php" style="margin-top: 12px;" class="btn btn-info ">feedback</a>
               </li>
               <li class="header__link-wrapper">
-                <a href="home.html" class="btn btn-info" style="margin-top: 12px;" >Logout</a> 
+                <a href="index.php" class="btn btn-info" style="margin-top: 12px;" >Logout</a> 
               </li>
             </ul>
             <div class="header__main-ham-menu-cont">
@@ -312,7 +312,7 @@ background-color: yellowgreen;
                 <a href="Donor_feedback.php"  class="btn btn-info">feedback</a>
               </li>
               <li class="header__sm-menu-link">
-                <a href="home.html" class="btn btn-info">Logout</a>
+                <a href="index.php" class="btn btn-info">Logout</a>
               </li>
             </ul>
           </div>

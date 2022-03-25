@@ -77,7 +77,7 @@ border-radius: 8px;
 /* css for video */
 .contain{
     width: 100%;
-    height: 36vh;
+    height: 44vh;
     position: relative;
     margin-bottom: 2px;
 }
@@ -212,7 +212,7 @@ else{
                 <a href="Donor_feedback.php" class="btn btn-info" style="margin-top: 12px;" >feedback</a> 
               </li>
               <li class="header__link-wrapper">
-                <a href="home.html" class="btn btn-info" style="margin-top: 12px;" >Logout</a> 
+                <a href="index.php" class="btn btn-info" style="margin-top: 12px;" >Logout</a> 
               </li>
             </ul>
             <div class="header__main-ham-menu-cont">
@@ -230,7 +230,7 @@ else{
                 <a href="Donor_dashboard.php" class="btn btn-info">Logout</a>
               </li>
               <li class="header__sm-menu-link">
-                <a href="home.html" class="btn btn-info">Logout</a>
+                <a href="index.php" class="btn btn-info">Logout</a>
               </li>
             </ul>
           </div>
@@ -261,7 +261,7 @@ else{
 
 <div class="contain">
   <video autoplay loop muted>
-      <source src="/Video/video.mp4" type="video/mp4">
+      <source src="Video/video.mp4" type="video/mp4">
   </video>
   <div class="text-box">
           Charity Connect

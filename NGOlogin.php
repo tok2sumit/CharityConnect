@@ -16,7 +16,7 @@ session_start();
 <style>
     .contain{
     width: 100%;
-    height: 40vh;
+    height: 44vh;
     position: relative;
     margin-bottom: 2px;
 }
@@ -36,7 +36,7 @@ session_start();
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 900;
     mix-blend-mode: multiply;
 }
@@ -163,7 +163,7 @@ if(isset($_POST['login'])){
           <div class="header__main">
             <ul class="header__links">
               <li class="header__link-wrapper">
-                <a href="home.html" class="header__link"> Home </a>
+                <a href="index.php" class="header__link"> Home </a>
               </li>
             </ul>
             <div class="header__main-ham-menu-cont">
@@ -175,7 +175,7 @@ if(isset($_POST['login'])){
           <div class="header__sm-menu-content">
             <ul class="header__sm-menu-links">
               <li class="header__sm-menu-link">
-                <a href="home.html"> Home </a>
+                <a href="index.php"> Home </a>
               </li>
             </ul>
           </div>
@@ -243,7 +243,7 @@ if(isset($_POST['login'])){
                         <div class="footer-text two">
                             <h3>USEFUL LINKS</h3>
                             <ul>
-                                <li><a href="home.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 
                             </ul>
                         </div>

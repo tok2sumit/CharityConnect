@@ -160,7 +160,7 @@ else{
               <div class="header__main">
                 <ul class="header__links">
                   <li class="header__link-wrapper">
-                    <a href="home.html" class="header__link"> Home </a>
+                    <a href="index.php" class="header__link"> Home </a>
                   </li>
                   <li class="header__link-wrapper">
                     <a href="Donorlogin.php" class="header__link">Donate </a>
@@ -180,7 +180,7 @@ else{
               <div class="header__sm-menu-content">
                 <ul class="header__sm-menu-links">
                   <li class="header__sm-menu-link">
-                    <a href="home.html"> Home </a>
+                    <a href="index.php"> Home </a>
                   </li>
                   <li class="header__sm-menu-link">
                     <a href="Donorlogin.php"> Donate </a>

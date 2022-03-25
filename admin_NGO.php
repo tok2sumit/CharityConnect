@@ -250,7 +250,7 @@ border-radius: 8px;
           </li>
           
           <li class="header__sm-menu-link">
-            <a href="home.html" class="btn btn-info">Logout</a>
+            <a href="index.php" class="btn btn-info">Logout</a>
           </li>
         </ul>
       </div>
@@ -343,7 +343,7 @@ $total2 = $row2[0];
                       <h3>USEFUL LINKS</h3>
                       <ul>
                           <li><a href="admin_dashboard.php">Home</a></li>
-                          <li><a href="home.html">Logout</a></li>
+                          <li><a href="index.php">Logout</a></li>
                           
                       </ul>
                   </div>

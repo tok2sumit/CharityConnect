@@ -80,7 +80,7 @@ border-radius: 8px;
 /* css for video */
 .contain{
     width: 100%;
-    height: 36vh;
+    height: 40vh;
     position: relative;
     margin-bottom: 2px;
 }
@@ -100,7 +100,7 @@ border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 900;
     mix-blend-mode: multiply;
 }
@@ -127,7 +127,7 @@ border-radius: 8px;
                 <a href="Donor_feedback.php" class="btn btn-info" style="margin-top: 12px;" >feedback</a> 
               </li>
               <li class="header__link-wrapper">
-                <a href="Home.html" class="btn btn-info" style="margin-top: 12px;" >Logout</a> 
+                <a href="index.php" class="btn btn-info" style="margin-top: 12px;" >Logout</a> 
               </li>
             </ul>
             <div class="header__main-ham-menu-cont">
@@ -145,7 +145,7 @@ border-radius: 8px;
                 <a href="Donor_feedback.php" class="btn btn-info">feedback</a>
               </li>
               <li class="header__sm-menu-link">
-                <a href="home.html" class="btn btn-info">Logout</a>
+                <a href="index.php" class="btn btn-info">Logout</a>
               </li>
               
             </ul>
@@ -240,7 +240,7 @@ border-radius: 8px;
                           <ul>
                               <li><a href="Donor_dashboard.php">Home</a></li>
                               <li><a href="Donor_feedback.php">Feedback</a></li>
-                              <li><a href="home.html">Logout</a></li>
+                              <li><a href="index.php">Logout</a></li>
                           </ul>
                       </div>
                   </div>
