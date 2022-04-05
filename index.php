@@ -96,7 +96,7 @@
               <div class="header__main">
                 <ul class="header__links">
                   <li class="header__link-wrapper">
-                    <a href="home.html" class="header__link"> Home </a>
+                    <a href="index.php" class="header__link"> Home </a>
                   </li>
                   <li class="header__link-wrapper">
                     <a href="Donorlogin.php" class="header__link">Donate </a>
@@ -326,7 +326,7 @@
                                 <div class="footer-text two">
                                     <h3>USEFUL LINKS</h3>
                                     <ul>
-                                        <li><a href="/">Home</a></li>
+                                        <li><a href="index.php">Home</a></li>
                                         <li><a href="Donorlogin.php">Donate</a></li>
                                         <li><a href="Reg_Login.html">Join-Us</a></li>
                                        

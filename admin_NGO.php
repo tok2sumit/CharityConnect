@@ -209,7 +209,7 @@ border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
+    font-size: 41px;
     font-weight: 900;
     mix-blend-mode: multiply;
 }

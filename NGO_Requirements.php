@@ -207,7 +207,7 @@ border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
+    font-size: 41px;
     font-weight: 900;
     mix-blend-mode: multiply;
 }
@@ -387,7 +387,7 @@ else{
 
 <div class="contain">
   <video autoplay loop muted>
-      <source src="/static/video.mp4" type="video/mp4">
+      <source src="Video/video.mp4" type="video/mp4">
   </video>
   <div class="text-box">
           Charity Connect
@@ -451,15 +451,6 @@ else{
     }
   })
           </script>  
-
-
-
-
-
-
-
-
-    
 
 </body>
 </html>
