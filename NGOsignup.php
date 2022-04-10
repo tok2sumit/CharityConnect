@@ -142,7 +142,7 @@ if(isset($_POST["submit"]))
 
     move_uploaded_file($_FILES["image"]["tmp_name"],$dst);  // move image into the {all_images} folder with 32 characters hex number and image name
 	
-    $select = "SELECT * FROM NGOs WHERE email = '$mail'";
+    $select = "SELECT * FROM ngos WHERE email = '$mail'";
     $result = mysqli_query($conn, $select);
     if(mysqli_num_rows($result) > 0){
       echo '<script type  = "text/javascript">';
@@ -150,7 +150,7 @@ if(isset($_POST["submit"]))
       echo 'window.location.href = "NGOsignup.php"';
       echo '</script>';
     }else{
-      $register = "INSERT INTO NGOs (filename,images,firstname,lastname,email,username,password,confermpassword,mobileno,address, status) VALUES ('$_POST[fname]','$dst_db','$fnm','$lnm','$mail','$unm','$pass','$repass','$phone','$addr', 'pending')";
+      $register = "INSERT INTO ngos (filename,images,firstname,lastname,email,username,password,confermpassword,mobileno,address, status) VALUES ('$_POST[fname]','$dst_db','$fnm','$lnm','$mail','$unm','$pass','$repass','$phone','$addr', 'pending')";
       mysqli_query($conn, $register);
       echo '<script type  = "text/javascript">';
       echo 'alert("Your account is now pending for approval!");';
