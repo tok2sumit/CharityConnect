@@ -110,19 +110,19 @@ if(isset($_POST['login'])){
         $password = $_POST['password'];
         $name = $_POST["name"];
 
-        $forname = mysqli_query($conn,"SELECT * FROM NGOs where filename = '$name'");
+        $forname = mysqli_query($conn,"SELECT * FROM ngos where filename = '$name'");
         $count = mysqli_num_rows($forname);
 	if ($count<=0){
 		echo "<script>alert('Wrong Credentials....!!');</script>";
 		
 	}else {
             
-        $select = mysqli_query($conn, "SELECT * FROM NGOs WHERE username = '$username' AND password = '$password'");
+        $select = mysqli_query($conn, "SELECT * FROM ngos WHERE username = '$username' AND password = '$password'");
         $row = mysqli_fetch_array($select);
 
         $status =$row['status'];
 
-        $select2 = mysqli_query($conn, "SELECT * FROM NGOs WHERE username = '$username' AND password = '$password'");
+        $select2 = mysqli_query($conn, "SELECT * FROM ngos WHERE username = '$username' AND password = '$password'");
         $check_user=mysqli_num_rows($select2);
 
         if($check_user==1){

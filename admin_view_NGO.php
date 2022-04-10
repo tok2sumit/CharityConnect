@@ -271,19 +271,8 @@ border-radius: 8px;
   <?php
 
   include 'check.php';
-      //  $servername = "localhost";
-      //  $username = "root";
-      //  $password = "";
-       
-      //  // Create connection
-      //  $conn = mysqli_connect($servername, $username, $password);
-       
-      //  // Check connection
-      //  if (!$conn) {
-      //    die("Connection failed: " . mysqli_connect_error());
-      //  } 
-      //  mysqli_select_db($conn,"NGO");
-            $query = "SELECT * FROM NGOs ORDER BY id ASC";
+     
+            $query = "SELECT * FROM ngos ORDER BY id ASC";
             $result = mysqli_query($conn, $query);
             while($row = mysqli_fetch_array($result)){
             

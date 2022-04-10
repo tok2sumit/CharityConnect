@@ -287,7 +287,7 @@ background-color: yellowgreen;
     $ereq=$_POST["ereq"];
     // $ename variable is used to check that name should be same as in register and login
   
-    $check = "SELECT * FROM NGOs where filename = '$ename'";
+    $check = "SELECT * FROM ngos where filename = '$ename'";
     $result = mysqli_query($conn, $check);
     while($row = mysqli_fetch_array($result)){
     if($row<=0){

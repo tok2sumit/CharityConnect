@@ -272,7 +272,7 @@ border-radius: 8px;
  
        <?php
             include 'check.php';
-            $query = "SELECT * FROM NGOs WHERE status = 'pending' ORDER BY id ASC";
+            $query = "SELECT * FROM ngos WHERE status = 'pending' ORDER BY id ASC";
             $result = mysqli_query($conn, $query);
             while($row = mysqli_fetch_array($result)){
         ?>

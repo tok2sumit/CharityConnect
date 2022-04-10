@@ -271,12 +271,12 @@ border-radius: 8px;
 
 include 'check.php';
 
-$sql = "SELECT COUNT(1) FROM NGOs";
+$sql = "SELECT COUNT(1) FROM ngos";
 $cnt = mysqli_query($conn,$sql);
 $row = mysqli_fetch_array($cnt);
 $total = $row[0];
 
-$sql2 = "SELECT count(1) FROM NGOs WHERE status = 'pending'";
+$sql2 = "SELECT count(1) FROM ngos WHERE status = 'pending'";
 $cnt2 = mysqli_query($conn,$sql2);
 $row2 = mysqli_fetch_array($cnt2);
 $total2 = $row2[0];
