@@ -164,19 +164,24 @@ border-radius: 8px;
       </div>
      
 
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">  
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/carosal-bg.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <p><h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ipsa ullam adipisci eligendi nemo eum quaerat aperiam est voluptatum debitis unde molestiae iure perferendis deleniti fugiat, at labore consequuntur quae.</h3></p>
-        <h5><a class="white-button" href="Donor_AllRequirements.php">View all NGO Requirements</a></h5>
-        <h5><a class="white-button" href="Donor_AllDonations.php">Donation history</a></h5>
-        <h5><a class="white-button" href="Donor_feedback.php">Give Feedback</a></h5>
+<section class="carosal-area">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="client owl-carousel owl-theme">
+                  <div class="item">
+                      <div class="text">
+                          <h3>CHILDREN NEED YOUR HELP</h3>
+                          <h5><a class="white-button" href="Donor_AllRequirements.php">View all NGO Requirements</a></h5>
+                          <h5><a class="white-button" href="Donor_AllDonations.php">Donation history</a></h5>
+                          <h5><a class="white-button" href="Donor_feedback.php">Give Feedback</a></h5>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>  
   </div>
-</div>
+</section>
 
 
 <div class="contain">

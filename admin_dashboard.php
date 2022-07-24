@@ -158,8 +158,8 @@ border-radius: 8px;
     <h1>Admin Dashboard</h1>
   </div>
  
-
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">  
+  
+<!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">  
 <div class="carousel-inner">
 <div class="carousel-item active">
   <img src="img/carosal-bg.jpg" class="d-block w-100" alt="...">
@@ -171,7 +171,24 @@ border-radius: 8px;
   </div>
 </div>  
 </div>
-</div>
+</div> -->
+
+<section class="carosal-area">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="client owl-carousel owl-theme">
+                  <div class="item">
+                      <div class="text">
+                          <h5><a class="white-button" href="admin_NGO.php">NGO</a></h5>
+                          <h5><a class="white-button" href="admin_viewfeed.php">View feedback</a></h5>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
 
 <div class="contain">

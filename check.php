@@ -16,7 +16,7 @@ $conn = mysqli_connect($servername, $username, $password);
 
 // Check connection
 if ($conn) { 
-    // mysqli_select_db($conn,"charityconnect");
+    //  mysqli_select_db($conn,"charityconnect");
     mysqli_select_db($conn,"hcOJV17RPg");
 }else{
     die("Connection failed: " . mysqli_connect_error());
